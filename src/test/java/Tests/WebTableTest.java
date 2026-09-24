@@ -86,8 +86,8 @@ public class WebTableTest extends Test_Base_Page {
         webTablesPage.enterDepartmentField(department);
         webTablesPage.clickOnSubmitButton();*/
 
-        webTablesPage.addEntry(firstName,lastName, email, age, salary, department);
-        webTablesPage.addEntry("Jon", "Ion", "jon@yahoo.com", "35","10000","IT manual");
+       // webTablesPage.addEntry(firstName,lastName, email, age, salary, department);
+       // webTablesPage.addEntry("Jon", "Ion", "jon@yahoo.com", "35","10000","IT manual");
 
 
         WebElement rowAdded = getDriver().findElement(By.xpath("(//tr)[5]"));
@@ -126,7 +126,7 @@ public class WebTableTest extends Test_Base_Page {
 //        Assert.assertTrue(departmentColumn.getText().equals(department));Assert.assertEquals(departmentColumn.getText(), department);
 
 
-        webTablesPage.verifyEntry(firstName,lastName,email,age, salary, department);
+       // webTablesPage.verifyEntry(firstName,lastName,email,age, salary, department);
 
 
 

@@ -1,7 +1,7 @@
 package Pages;
 
 import HelperMethods.AlertMethods;
-import HelperMethods.ElementsMetods;
+import HelperMethods.ElementsMethods;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,12 +9,12 @@ import org.openqa.selenium.support.PageFactory;
 
 public class AlertsPage {
     WebDriver driver;
-    ElementsMetods elementsMetods;
+    ElementsMethods elementsMetods;
     AlertMethods alertMethods;
 
     public AlertsPage(WebDriver driver) {
         this.driver = driver;
-        this.elementsMetods =  new ElementsMetods(driver);
+        this.elementsMetods =  new ElementsMethods(driver);
         this.alertMethods = new AlertMethods(driver);
         PageFactory.initElements(driver, this);
     }

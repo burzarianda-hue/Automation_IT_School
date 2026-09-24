@@ -1,6 +1,6 @@
 package Pages;
 
-import HelperMethods.ElementsMetods;
+import HelperMethods.ElementsMethods;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,11 +9,11 @@ import org.openqa.selenium.support.PageFactory;
 public class FramesPage {
 
     WebDriver driver;
-    ElementsMetods elementsMetods;
+    ElementsMethods elementsMetods;
 
     public FramesPage(WebDriver driver) {
         this.driver = driver;
-        this.elementsMetods = new ElementsMetods(driver);
+        this.elementsMetods = new ElementsMethods(driver);
         PageFactory.initElements(driver, this);
     }
 

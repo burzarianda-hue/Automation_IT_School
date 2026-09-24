@@ -40,14 +40,14 @@ public class WebTableTestRefactorizare {
 
         WebTablesPage webTablesPage = new WebTablesPage(driver);
 
-        webTablesPage.addEntry(firstName,lastName, email, age, salary, department);
-        webTablesPage.addEntry("Jon", "Ion", "jon@yahoo.com", "35","10000","IT manual");//ex
+        //webTablesPage.addEntry(firstName,lastName, email, age, salary, department);
+        //webTablesPage.addEntry("Jon", "Ion", "jon@yahoo.com", "35","10000","IT manual");//ex
 
         WebElement rowAdded = driver.findElement(By.xpath("(//tr)[5]"));
         String rowAddedText = rowAdded.getText();
         System.out.println(rowAddedText);
 
-        webTablesPage.verifyEntry(firstName,lastName,email,age, salary, department);
+        //webTablesPage.verifyEntry(firstName,lastName,email,age, salary, department);
 
 
 

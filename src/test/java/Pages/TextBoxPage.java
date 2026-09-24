@@ -1,6 +1,6 @@
 package Pages;
 
-import HelperMethods.ElementsMetods;
+import HelperMethods.ElementsMethods;
 import ObjectData.TextBoxObject;
 import Shared_Data.Test_Base_Page;
 import org.openqa.selenium.WebDriver;
@@ -12,12 +12,12 @@ import org.testng.Assert;
 public class TextBoxPage extends Test_Base_Page {
 
         WebDriver driver;
-        ElementsMetods elementsMethods;
+        ElementsMethods elementsMethods;
 
 
         public TextBoxPage(WebDriver driver) {
             this.driver = driver;
-            this.elementsMethods = new ElementsMetods(driver);
+            this.elementsMethods = new ElementsMethods(driver);
             PageFactory.initElements(driver, this);
         }
 
