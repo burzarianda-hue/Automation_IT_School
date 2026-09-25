@@ -9,14 +9,14 @@
 name: Automation ITSchool
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: 
     inputs:
       suite:
         description: 'chose automation suite RegresionSuite, SmokeSuite'
         required: true
         default: SmokeSuite
       browser:
-        description: 'chose browser:chrome, edge'
+        description: 'chose browser: chrome, edge '
         required: true
         default: chrome
  
@@ -34,10 +34,10 @@ jobs:
         distribution: 'temurin'
         server-id: github
         settings-path: ${{ github.workspace }}
-    
+        
     - name: Run Automation Suite
       run: mvn clean install -Dci_cd=true -Dbrowser=${{github.event.inputs.browser}} -DsuiteXmlFile=Suites/${{github.event.inputs.suite}} -PCustomSuite
-
+      
     - name: Publish Test Results
       if: always()
       uses: actions/upload-artifact@v4
@@ -46,4 +46,6 @@ jobs:
         path: |
           target/chaintest
           target/logs
-    
+          
+      
+      
