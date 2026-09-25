@@ -16,7 +16,7 @@ on:
         required: true
         default: SmokeSuite
       browser:
-        description: 'chose browser': 'chrome, edge'
+        description: 'chose browser:chrome, edge'
         required: true
         default: chrome
  
