@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
     inputs:
       suite:
-        description: 'chose automation suite RregresionSuite, SmokeSuite'
+        description: 'chose automation suite RegresionSuite, SmokeSuite'
         required: true
         default: SmokeSuite
       browser:
